@@ -16,9 +16,9 @@ magick $LogVacio -stroke yellow -draw 'line 16,330 736,330' $LogVacio
 magick $LogVacio -stroke yellow -draw 'line 16,341 736,341' $LogVacio
 
 # Agregar lineas verticales cada hora (6 bloques)
-magick $LogVacio -stroke yellow -draw 'line 16,11 16,341' $LogVacio	# Despues del minuto 0
-magick $LogVacio -stroke yellow -draw 'line 46,11 46,341' $LogVacio	# Despues del minuto 60
-magick $LogVacio -stroke yellow -draw 'line 76,11 76,341' $LogVacio	# Despues del minuto 120
+magick $LogVacio -stroke yellow -draw 'line 16,11 16,341'   $LogVacio	# Despues del minuto 0
+magick $LogVacio -stroke yellow -draw 'line 46,11 46,341'   $LogVacio	# Despues del minuto 60
+magick $LogVacio -stroke yellow -draw 'line 76,11 76,341'   $LogVacio	# Despues del minuto 120
 magick $LogVacio -stroke yellow -draw 'line 106,11 106,341' $LogVacio	# Despues del minuto 180
 magick $LogVacio -stroke yellow -draw 'line 136,11 136,341' $LogVacio	# Despues del minuto 240
 magick $LogVacio -stroke yellow -draw 'line 166,11 166,341' $LogVacio	# Despues del minuto 300
