@@ -1,3 +1,4 @@
+#!/bin/bash
 
 LogVacio=$1
 
