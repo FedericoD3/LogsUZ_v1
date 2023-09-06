@@ -12,16 +12,15 @@ magick $LogVacio -fill xc:#041A40 -draw "rectangle 16,11 736,341" $LogVacio
 magick $LogVacio -fill xc:#97D3EA -draw "rectangle 196,11 526,341" $LogVacio
 
 # Agregar lineas horizontales cada dia inc bordes (temporal)
-#for i in $(seq 0 32)
-#  do
-#    Y=$(( $i * 10 + 10 ))
-#    cmd="$LogVacio -stroke xc:#40FF40 -draw 'line 16,"$Y" 736,"$Y"' $LogVacio"
-#    echo$cmd
-#    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
-#  done
+for i in $(seq 0 32)
+  do
+    Y=$(( $i * 10 + 10 ))
+    cmd="$LogVacio -stroke xc:#40FF40 -draw 'line 16,"$Y" 736,"$Y"' $LogVacio"
+    echo $cmd
+    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
+  done
 return
 
-echo "no salio?"
 # Agregar lineas horizontales cada 5 dias:
 
 
