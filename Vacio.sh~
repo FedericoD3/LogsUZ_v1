@@ -15,8 +15,8 @@ for i in $(seq 0 32)
   do
     Y=$(( $i * 10 + 10 ))
     magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,11 736,11' $LogVacio
-    echo -n "0 " >> $Arch # Las primeras 10 horas empiezan por 0
   done
+return
 
 # Agregar lineas horizontales cada 5 dias:
 

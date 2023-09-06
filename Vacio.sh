@@ -3,19 +3,18 @@
 LogVacio=$1
 
 # Lienzo vacío transparente (inc margenes y bordes):
-#magick -size 737x342 xc:none $LogVacio
+magick -size 737x342 xc:none $LogVacio
 
 # Rectángulo color azul noche:
-#magick $LogVacio -fill xc:#041A40 -draw "rectangle 16,11 736,341" $LogVacio
+magick $LogVacio -fill xc:#041A40 -draw "rectangle 16,11 736,341" $LogVacio
 # Rectángulo color dia:
-#magick $LogVacio -fill xc:#97D3EA -draw "rectangle 196,11 526,341" $LogVacio
+magick $LogVacio -fill xc:#97D3EA -draw "rectangle 196,11 526,341" $LogVacio
 
 # Agregar lineas horizontales cada dia inc bordes (temporal)
 for i in $(seq 0 32)
   do
     Y=$(( $i * 10 + 10 ))
-    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,11 736,11' $LogVacio
-    echo -n "0 " >> $Arch # Las primeras 10 horas empiezan por 0
+    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
   done
 return
 
