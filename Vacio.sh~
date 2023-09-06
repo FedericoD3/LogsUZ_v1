@@ -10,7 +10,17 @@ magick $LogVacio -fill xc:#041A40 -draw "rectangle 16,11 736,341" $LogVacio
 # Rectángulo color dia:
 magick $LogVacio -fill xc:#97D3EA -draw "rectangle 196,11 526,341" $LogVacio
 
+# Agregar lineas horizontales cada dia inc bordes (temporal)
+for i in $(seq 0 32)
+  do
+    Y=$(( $i * 10 + 10 ))
+    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,11 736,11' $LogVacio
+    echo -n "0 " >> $Arch # Las primeras 10 horas empiezan por 0
+  done
+
 # Agregar lineas horizontales cada 5 dias:
+
+
 magick $LogVacio -stroke yellow -draw 'line 16,11 736,11' $LogVacio
 magick $LogVacio -stroke yellow -draw 'line 16,59 736,59' $LogVacio
 magick $LogVacio -stroke yellow -draw 'line 16,110 736,110' $LogVacio
