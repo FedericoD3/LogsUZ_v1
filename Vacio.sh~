@@ -6,14 +6,14 @@ LogVacio=$1
 magick -size 880x342 xc:none $LogVacio
 
 # Agregar lineas horizontales cada 5 dias:
-magick $LogVacio -stroke yellow -draw 'line 16,11 736,11' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,59 736,59' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,110 736,110' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,165 736,165' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,220 736,220' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,275 736,275' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,330 736,330' $LogVacio
-magick $LogVacio -stroke yellow -draw 'line 16,341 736,341' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,11 880,11' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,60 880,60' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,110 880,110' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,165 880,165' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,220 880,220' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,275 880,275' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,330 880,330' $LogVacio
+magick $LogVacio -stroke yellow -draw 'line 16,341 880,341' $LogVacio
 
 # Agregar lineas verticales cada hora (6 bloques)
 magick $LogVacio -stroke yellow -draw 'line 16,11 16,341' $LogVacio
