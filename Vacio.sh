@@ -17,7 +17,8 @@ for i in $(seq 0 32)
     Y=$(( $i * 10 + 10 ))
     cmd="$LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio"
     echo $cmd
-    # magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
+    echo $cmd | magick
+#    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
   done
 return
 
