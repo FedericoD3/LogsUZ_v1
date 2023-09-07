@@ -15,10 +15,7 @@ magick $LogVacio -fill xc:#97D3EA -draw "rectangle 196,11 526,341" $LogVacio
 for i in $(seq 0 32)
   do
     Y=$(( $i * 10 + 10 ))
-    cmd="$LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio"
-    echo $cmd
-    echo $cmd | magick
-#    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,$Y 736,$Y' $LogVacio
+    magick $LogVacio -stroke xc:#40FF40 -draw 'line 16,"${Y}" 736,"${Y}"' $LogVacio
   done
 return
 
